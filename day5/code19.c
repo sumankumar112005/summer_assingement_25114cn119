@@ -1,13 +1,13 @@
+#include <stdio.h>
 int main() {
-    int n, count = 0;
-    printf("Enter an integer: ");
-    scanf("%d", &n);
-    while (n > 0) {
-        if (n & 1) {
-            count++;
+    int num, i;
+    printf("Enter a positive integer: ");
+    scanf("%d", &num);
+    printf("Factors of %d are: ", num);
+    for (i = 1; i <= num; ++i) {
+        if (num % i == 0) {
+            printf("%d ", i);
         }
-        n = n >> 1;
     }
-    printf("Number of set bits: %d\n", count);
     return 0;
 }

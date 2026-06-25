@@ -24,3 +24,4 @@ int main() {
 
     printf("No repeating character found.\n");
     return 0;
+}
